@@ -1,0 +1,268 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+html {
+  height: 100%;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+}
+
+/***
+    The new CSS reset - version 1.8.2 (last updated 23.12.2022)
+    GitHub page: https://github.com/elad2412/the-new-css-reset
+***/
+/*
+    Remove all the styles of the "User-Agent-Stylesheet", except for the 'display' property
+    - The "symbol *" part is to solve Firefox SVG sprite bug
+ */
+*:where(:not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)) {
+  all: unset;
+  display: revert;
+}
+
+/* Preferred box-sizing value */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Reapply the pointer cursor for anchor tags */
+a,
+button {
+  cursor: revert;
+}
+
+/* Remove list styles (bullets/numbers) */
+ol,
+ul,
+menu {
+  list-style: none;
+}
+
+/* For images to not be able to exceed their container */
+img {
+  max-inline-size: 100%;
+  max-block-size: 100%;
+}
+
+/* removes spacing between cells in tables */
+table {
+  border-collapse: collapse;
+}
+
+/* Safari - solving issue when using user-select:none on the <body> text input doesn't working */
+input,
+textarea {
+  -webkit-user-select: auto;
+  user-select: auto;
+}
+
+/* revert the 'white-space' property for textarea elements on Safari */
+textarea {
+  white-space: revert;
+}
+
+/* minimum style to allow to style meter element */
+meter {
+  -webkit-appearance: revert;
+  appearance: revert;
+}
+
+/* preformatted text - use only for this feature */
+pre {
+  all: revert;
+}
+
+/* reset default text opacity of input placeholder */
+::placeholder {
+  color: unset;
+}
+
+/* remove default dot (•) sign */
+::marker {
+  content: "";
+}
+
+/* fix the feature of 'hidden' attribute.
+   display:revert; revert to element instead of attribute */
+:where([hidden]) {
+  display: none;
+}
+
+/* revert for bug in Chromium browsers
+   - fix for the content editable attribute will work properly.
+   - webkit-user-select: auto; added for Safari in case of using user-select:none on wrapper element*/
+:where([contenteditable]:not([contenteditable=false])) {
+  -moz-user-modify: read-write;
+  -webkit-user-modify: read-write;
+  overflow-wrap: break-word;
+  -webkit-user-select: auto;
+  user-select: auto;
+}
+
+/* apply back the draggable feature - exist only in Chromium and Safari */
+:where([draggable=true]) {
+  -webkit-user-drag: element;
+}
+
+.card {
+  width: 360px;
+  padding: 0.25em;
+  background-color: #b8b8b8;
+  position: relative;
+}
+.card::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  width: 100%;
+  height: 30%;
+  background: url("../../images/icones/pokeball.svg") no-repeat;
+  background-size: 60%;
+  background-position: top right;
+  z-index: 1;
+  opacity: 0.1;
+}
+.card__top {
+  width: 90%;
+  margin: 0.9375em auto 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+.card__title {
+  display: flex;
+  align-items: center;
+  z-index: 100;
+}
+.card__nbr {
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 700;
+  z-index: 100;
+}
+.card__image {
+  width: 200px;
+  height: 200px;
+  display: block;
+  position: relative;
+  top: 50px;
+  margin: auto;
+  z-index: 100;
+}
+.card__description {
+  background-color: white;
+  border-radius: 5px;
+  padding-top: 3.75em;
+}
+.card__type {
+  display: flex;
+  justify-content: center;
+  gap: 1.5em;
+}
+.card__typeTag {
+  display: flex;
+  align-items: center;
+  padding: 2px 8px;
+  color: white;
+  font-size: 0.625rem;
+  font-weight: 700;
+  background-color: #666666;
+  border-radius: 10px;
+}
+.card__info {
+  display: flex;
+  justify-content: center;
+}
+.card__label {
+  width: 100px;
+  text-align: center;
+}
+.card__labelTitle {
+  font-size: 0.5rem;
+  margin-top: 0.9375em;
+  color: #666666;
+}
+.card__labelValue {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+  font-size: 0.625rem;
+  color: #1D1D1D;
+}
+.card__labelValue--rotate {
+  transform: rotate(90deg);
+}
+.card__labelValue img {
+  width: 16px;
+  height: 16px;
+}
+.card__descriptionText {
+  width: 88%;
+  font-size: 0.625rem;
+  margin: 2.5em auto;
+}
+.card__statsInfo {
+  width: 88%;
+  margin: auto;
+  padding-bottom: 1.25em;
+  display: flex;
+  gap: 0.5em;
+}
+.card__statsTag {
+  color: #b8b8b8;
+  font-size: 0.625rem;
+  font-weight: 700;
+  text-align: right;
+  padding-right: 0.5em;
+}
+.card__statsNbr {
+  font-size: 0.625rem;
+  color: #1D1D1D;
+}
+.card__statsBar {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.title {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.subtitle {
+  text-align: center;
+  color: #b8b8b8;
+  font-size: 0.875rem;
+  font-weight: 700;
+  margin: 1.25em;
+}
+
+.greyBar {
+  position: relative;
+}
+.greyBar::after {
+  content: "";
+  height: 100%;
+  width: 1px;
+  background-color: #E0E0E0;
+  position: absolute;
+  right: -0.5px;
+  top: 0;
+}
+
+.bar {
+  height: 4px;
+  width: 100%;
+  background-color: #e6e6e6;
+  border-radius: 10px;
+}
+
+/*# sourceMappingURL=main.css.map */

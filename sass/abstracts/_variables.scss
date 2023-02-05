@@ -1,0 +1,45 @@
+// color
+$primary-color: #dc0a2d;
+$secondary-color: #b8b8b8;
+$font-color: (
+    'dark': #1D1D1D,
+    'medium': #666666,
+    'light': #E0E0E0
+);
+$color-by-types: (
+  'type': #666666,
+  'normal': #aaa67f,
+  'fighting': #c12239,
+  'poison': #a43e9e,
+  'flying': #a891ec,
+  'ground': #dec16b,
+  'rock': #b69e31,
+  'bug': #a7b723,
+  'ghost': #70559b,
+  'steel': #b7b9d0,
+  'fire': #f57d31,
+  'water': #6493eb,
+  'grass': #74cb48,
+  'electric': #f9cf30,
+  'psychic': #fb5584,
+  'ice': #9ad6df,
+  'dragon': #7037ff,
+  'dark': #75574c,
+  'fairy': #e69eac,
+  'shadow': #9f33fd,
+);
+
+// font settings
+$base-font-family: 'Poppins', sans-serif;
+$base-font-size: 16px;
+$title-font-size: rem(24);
+$subtitle-font-size: rem(14);
+$nbr-font-size: rem(12);
+$type-font-size: rem(10);
+
+// different size
+$wrapper: 88%;
+$progressBar-with: 233px;
+$card-width: 360px;
+$card-padding: 0.25em;
+$bar-height: 4px;

@@ -1,0 +1,13 @@
+.title {
+  color: white;
+  font-size: $title-font-size;
+  font-weight: 700;
+}
+
+.subtitle {
+  text-align: center;
+  color: $secondary-color;
+  font-size: $subtitle-font-size;
+  font-weight: 700;
+  margin: em(20);
+}

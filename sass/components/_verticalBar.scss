@@ -1,0 +1,13 @@
+.greyBar {
+  position: relative;
+  
+  &::after {
+    content: '';
+    height: 100%;
+    width: 1px;
+    background-color: map-get($map: $font-color, $key: light);
+    position: absolute;
+    right: -0.5px;
+    top: 0;
+  }
+}

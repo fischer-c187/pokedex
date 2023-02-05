@@ -1,0 +1,150 @@
+.card {
+  width: $card-width;
+  padding: $card-padding;
+  background-color: $secondary-color;
+  position: relative;
+
+  // Permet d'afficher la pokeball en fond avec une opcaité
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    width: 100%;
+    height: 30%;
+    background: url('../../images/icones/pokeball.svg') no-repeat;
+    background-size: 60%;
+    background-position: top right;
+    z-index: 1;
+    opacity: 0.1;
+  }
+
+  // --------------- HEADER ------------------------
+  // correspond à la zone en haut de notre carte
+  &__top {
+    width: 90%;
+    margin: em(15) auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+  }
+
+  &__title {
+    display: flex;
+    align-items: center;
+    z-index: 100;
+  }
+
+  &__nbr {
+    color: white;
+    font-size: $nbr-font-size;
+    font-weight: 700;
+    z-index: 100;
+  }
+
+  // gestion de l'image du pokemon
+  &__image {
+    width: 200px;
+    height: 200px;
+    display: block;
+    position: relative;
+    top: 50px;
+    margin: auto;
+    z-index: 100;
+  }
+
+
+  // --------------- ZONE OU RETROUVE NOS INFORMATIONS ------------------------
+   &__description {
+    background-color: white;
+    border-radius: 5px;
+    padding-top: em(60);
+  }
+
+  &__type {
+    display: flex;
+    justify-content: center;
+    gap: em(24);
+  }
+
+  &__typeTag {
+    display: flex;
+    align-items: center;
+    padding: 2px 8px;
+    color: white;
+    font-size: $type-font-size;
+    font-weight: 700;
+    background-color: map-get($map: $color-by-types, $key: type);
+    border-radius: 10px;
+  }
+
+  &__info {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__label {
+    width: 100px;
+    text-align: center;
+
+    &Title {
+      font-size: rem(8);
+      margin-top: em(15);
+      color: map-get($map: $font-color, $key: medium);
+    }
+  }
+
+  &__labelValue {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: em(8);
+    font-size: $type-font-size;
+    color: map-get($map: $font-color, $key: dark);
+
+    &--rotate {
+      transform: rotate(90deg);
+    }
+
+    & img {
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+  &__descriptionText {
+    width: $wrapper;
+    font-size: $type-font-size;
+    margin: em(40) auto;
+  }
+
+  &__statsInfo {
+    width: $wrapper;
+    margin: auto;
+    padding-bottom: em(20);
+    display: flex;
+    gap: em(8);
+  }
+
+  &__statsTag {
+    color: $secondary-color;
+    font-size: $type-font-size;
+    font-weight: 700;
+    text-align: right;
+    padding-right: em(8);
+  }
+
+  &__statsNbr {
+    font-size: $type-font-size;
+    color: map-get($map: $font-color, $key: dark);
+  }
+
+  &__statsBar {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+}

@@ -1,0 +1,6 @@
+.bar {
+  height: $bar-height;
+  width: 100%;
+  background-color: lighten(map-get($map: $color-by-types, $key: type), 50%);
+  border-radius: 10px;
+}
