@@ -144,6 +144,9 @@ pre {
   align-items: center;
   z-index: 100;
 }
+.card input {
+  z-index: 100;
+}
 .card__title {
   display: flex;
   align-items: center;
@@ -154,6 +157,11 @@ pre {
   font-size: 0.75rem;
   font-weight: 700;
   z-index: 100;
+  width: 50px;
+  text-align: right;
+}
+.card__submit {
+  display: none;
 }
 .card__image {
   width: 200px;
@@ -246,6 +254,7 @@ pre {
   color: white;
   font-size: 1.5rem;
   font-weight: 700;
+  width: 200px;
 }
 
 .subtitle {
