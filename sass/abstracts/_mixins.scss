@@ -1,0 +1,15 @@
+@mixin color-by-type ($colorMap) {
+  @each $name, $color in $colorMap {
+    .#{$name}--color {
+      color: $color;
+    }
+  }
+}
+
+@mixin bg-by-type ($colorMap) {
+  @each $name, $color in $colorMap {
+    .#{$name}--bgColor {
+      background-color: $color;
+    }
+  }
+}

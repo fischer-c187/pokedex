@@ -126,7 +126,7 @@ pre {
   top: 4px;
   right: 4px;
   width: 100%;
-  height: 210px;
+  height: 230px;
   background: url("../images/icones/pokeball.svg") no-repeat;
   background-size: 60%;
   background-position: top right;
@@ -283,6 +283,166 @@ pre {
   width: 100%;
   background-color: #e6e6e6;
   border-radius: 10px;
+}
+
+.type--color {
+  color: #666666;
+}
+
+.normal--color {
+  color: #aaa67f;
+}
+
+.fighting--color {
+  color: #c12239;
+}
+
+.poison--color {
+  color: #a43e9e;
+}
+
+.flying--color {
+  color: #a891ec;
+}
+
+.ground--color {
+  color: #dec16b;
+}
+
+.rock--color {
+  color: #b69e31;
+}
+
+.bug--color {
+  color: #a7b723;
+}
+
+.ghost--color {
+  color: #70559b;
+}
+
+.steel--color {
+  color: #b7b9d0;
+}
+
+.fire--color {
+  color: #f57d31;
+}
+
+.water--color {
+  color: #6493eb;
+}
+
+.grass--color {
+  color: #74cb48;
+}
+
+.electric--color {
+  color: #f9cf30;
+}
+
+.psychic--color {
+  color: #fb5584;
+}
+
+.ice--color {
+  color: #9ad6df;
+}
+
+.dragon--color {
+  color: #7037ff;
+}
+
+.dark--color {
+  color: #75574c;
+}
+
+.fairy--color {
+  color: #e69eac;
+}
+
+.shadow--color {
+  color: #9f33fd;
+}
+
+.type--bgColor {
+  background-color: #666666;
+}
+
+.normal--bgColor {
+  background-color: #aaa67f;
+}
+
+.fighting--bgColor {
+  background-color: #c12239;
+}
+
+.poison--bgColor {
+  background-color: #a43e9e;
+}
+
+.flying--bgColor {
+  background-color: #a891ec;
+}
+
+.ground--bgColor {
+  background-color: #dec16b;
+}
+
+.rock--bgColor {
+  background-color: #b69e31;
+}
+
+.bug--bgColor {
+  background-color: #a7b723;
+}
+
+.ghost--bgColor {
+  background-color: #70559b;
+}
+
+.steel--bgColor {
+  background-color: #b7b9d0;
+}
+
+.fire--bgColor {
+  background-color: #f57d31;
+}
+
+.water--bgColor {
+  background-color: #6493eb;
+}
+
+.grass--bgColor {
+  background-color: #74cb48;
+}
+
+.electric--bgColor {
+  background-color: #f9cf30;
+}
+
+.psychic--bgColor {
+  background-color: #fb5584;
+}
+
+.ice--bgColor {
+  background-color: #9ad6df;
+}
+
+.dragon--bgColor {
+  background-color: #7037ff;
+}
+
+.dark--bgColor {
+  background-color: #75574c;
+}
+
+.fairy--bgColor {
+  background-color: #e69eac;
+}
+
+.shadow--bgColor {
+  background-color: #9f33fd;
 }
 
 /*# sourceMappingURL=main.css.map */
