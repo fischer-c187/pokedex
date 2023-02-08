@@ -445,4 +445,8 @@ pre {
   background-color: #9f33fd;
 }
 
+.error-text {
+  text-shadow: 0 0 3px #dc0a2d;
+}
+
 /*# sourceMappingURL=main.css.map */
