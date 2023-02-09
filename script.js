@@ -1,7 +1,17 @@
 import { errorColor, removeErrorColor, errorImg } from './modules/error.js'
-import { getPokemonByName } from './modules/api.js'
+import { getPokemonByName, getAllData } from './modules/api.js'
 import { Pokemon } from './modules/pokemon.js'
-import { newElement, setTypes, subtitleColor, cardColor, statsColor } from './modules/text.js'
+import { 
+  newElement, 
+  setTypes, 
+  subtitleColor, 
+  cardColor, 
+  statsColor, 
+  setHeight, 
+  setWeight, 
+  setDescription,
+  setBar
+} from './modules/text.js'
 
 const searchForm = document.querySelector('[name=searchForm]')
 const pokemonName = document.querySelector('[name=pokemonName]')
@@ -45,6 +55,12 @@ function test (pokemon) {
   subtitleColor(pok.types[0])
   statsColor(pok.types[0])
   cardColor(pok.types[0])
+  setHeight(pok.height)
+  setWeight(pok.weight)
+  setDescription(pok.description)
+  setBar(pok.stats, pok.types[0])
+
+  console.log(pok)
   
 }
 
@@ -52,7 +68,9 @@ inputs.forEach((element) => {
   element.addEventListener('blur', (event) => {
     getPokemonByName(endpointPokebuild, element.value)
       .then((data) => {
-        test(data)
+        // test(data)
+        getAllData(element.value)
+          .then(data => test(data))
         pokemonNbr.value = data.id
         pokemonName.value = data.name
         pokemonImg.src = data.image

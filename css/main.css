@@ -285,6 +285,92 @@ pre {
   border-radius: 10px;
 }
 
+.bar__progress {
+  height: 100%;
+  width: 0;
+  transition: width 1s;
+}
+
+.bar--type {
+  background-color: #999999;
+}
+
+.bar--normal {
+  background-color: #d3d1bc;
+}
+
+.bar--combat {
+  background-color: #e46577;
+}
+
+.bar--poison {
+  background-color: #cd7bc8;
+}
+
+.bar--vol {
+  background-color: #ede8fb;
+}
+
+.bar--sol {
+  background-color: #f1e4be;
+}
+
+.bar--roche {
+  background-color: #d9c774;
+}
+
+.bar--insecte {
+  background-color: #d3e060;
+}
+
+.bar--spectre {
+  background-color: #a593c4;
+}
+
+.bar--acier {
+  background-color: #f5f5f8;
+}
+
+.bar--feu {
+  background-color: #faba92;
+}
+
+.bar--eau {
+  background-color: #bed2f7;
+}
+
+.bar--plante {
+  background-color: #b0e297;
+}
+
+.bar--électrik {
+  background-color: #fce693;
+}
+
+.bar--psy {
+  background-color: #fdb9cc;
+}
+
+.bar--glace {
+  background-color: #e7f5f8;
+}
+
+.bar--dragon {
+  background-color: #b99dff;
+}
+
+.bar--ténèbres {
+  background-color: #aa897d;
+}
+
+.bar--fée {
+  background-color: #fbeff1;
+}
+
+.bar--ombre {
+  background-color: #cf98fe;
+}
+
 .type--color {
   color: #666666;
 }

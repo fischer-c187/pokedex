@@ -4,3 +4,11 @@
   background-color: lighten(map-get($map: $color-by-types, $key: type), 50%);
   border-radius: 10px;
 }
+
+.bar__progress {
+  height: 100%;
+  width: 0;
+  transition: width 1s;
+}
+
+@include color-bar-lighten($color-by-types);

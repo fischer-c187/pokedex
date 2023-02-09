@@ -13,3 +13,11 @@
     }
   }
 }
+
+@mixin color-bar-lighten ($colorMap) {
+  @each $name, $color in $colorMap {
+    .bar--#{$name} {
+      background-color: lighten($color: $color, $amount: 20%);
+    }
+  }
+}
