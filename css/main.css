@@ -293,7 +293,7 @@ pre {
   color: #aaa67f;
 }
 
-.fighting--color {
+.combat--color {
   color: #c12239;
 }
 
@@ -301,51 +301,51 @@ pre {
   color: #a43e9e;
 }
 
-.flying--color {
+.vol--color {
   color: #a891ec;
 }
 
-.ground--color {
+.sol--color {
   color: #dec16b;
 }
 
-.rock--color {
+.roche--color {
   color: #b69e31;
 }
 
-.bug--color {
+.insecte--color {
   color: #a7b723;
 }
 
-.ghost--color {
+.spectre--color {
   color: #70559b;
 }
 
-.steel--color {
+.acier--color {
   color: #b7b9d0;
 }
 
-.fire--color {
+.feu--color {
   color: #f57d31;
 }
 
-.water--color {
+.eau--color {
   color: #6493eb;
 }
 
-.grass--color {
+.plante--color {
   color: #74cb48;
 }
 
-.electric--color {
+.électrik--color {
   color: #f9cf30;
 }
 
-.psychic--color {
+.psy--color {
   color: #fb5584;
 }
 
-.ice--color {
+.glace--color {
   color: #9ad6df;
 }
 
@@ -353,15 +353,15 @@ pre {
   color: #7037ff;
 }
 
-.dark--color {
+.ténèbres--color {
   color: #75574c;
 }
 
-.fairy--color {
+.fée--color {
   color: #e69eac;
 }
 
-.shadow--color {
+.ombre--color {
   color: #9f33fd;
 }
 
@@ -373,7 +373,7 @@ pre {
   background-color: #aaa67f;
 }
 
-.fighting--bgColor {
+.combat--bgColor {
   background-color: #c12239;
 }
 
@@ -381,51 +381,51 @@ pre {
   background-color: #a43e9e;
 }
 
-.flying--bgColor {
+.vol--bgColor {
   background-color: #a891ec;
 }
 
-.ground--bgColor {
+.sol--bgColor {
   background-color: #dec16b;
 }
 
-.rock--bgColor {
+.roche--bgColor {
   background-color: #b69e31;
 }
 
-.bug--bgColor {
+.insecte--bgColor {
   background-color: #a7b723;
 }
 
-.ghost--bgColor {
+.spectre--bgColor {
   background-color: #70559b;
 }
 
-.steel--bgColor {
+.acier--bgColor {
   background-color: #b7b9d0;
 }
 
-.fire--bgColor {
+.feu--bgColor {
   background-color: #f57d31;
 }
 
-.water--bgColor {
+.eau--bgColor {
   background-color: #6493eb;
 }
 
-.grass--bgColor {
+.plante--bgColor {
   background-color: #74cb48;
 }
 
-.electric--bgColor {
+.électrik--bgColor {
   background-color: #f9cf30;
 }
 
-.psychic--bgColor {
+.psy--bgColor {
   background-color: #fb5584;
 }
 
-.ice--bgColor {
+.glace--bgColor {
   background-color: #9ad6df;
 }
 
@@ -433,15 +433,15 @@ pre {
   background-color: #7037ff;
 }
 
-.dark--bgColor {
+.ténèbres--bgColor {
   background-color: #75574c;
 }
 
-.fairy--bgColor {
+.fée--bgColor {
   background-color: #e69eac;
 }
 
-.shadow--bgColor {
+.ombre--bgColor {
   background-color: #9f33fd;
 }
 
